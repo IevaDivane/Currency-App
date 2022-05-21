@@ -1,0 +1,93 @@
+.card-label-second label{
+  background-color: #d3d3d3;
+  color: #15158f;
+  width: 100px;
+  margin: 5px;
+  display: flex;
+  justify-content: left;
+  border: 0.5px solid grey;
+  cursor: pointer;
+  &:hover {
+    background-color: #989797;
+  }
+}
+.container{
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+  justify-content: center;
+}
+.hidden{
+  display: none;
+}
+.showed{
+  background-color: #d3d3d3;
+  color: #15158f;
+  width: 100px;
+  margin: 5px;
+  display: flex;
+  justify-content: center;
+  border: none;
+  cursor: pointer;
+}
+.card-label{
+  justify-content: center;
+  padding-bottom: 10px;
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  width: 360px;
+}
+
+.closeBtn {
+  overflow: hidden;
+  position: relative;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: black;
+  color: white;
+  font: inherit;
+  text-indent: 100%;
+  cursor: pointer;
+  border: 2px solid white;
+  top:-6px;
+  left: 40px;
+
+  &:focus {
+    outline: solid 0 transparent;
+  }
+
+  &:hover {
+    background: rgb(255, 255, 255);
+    color: black;
+    border: 2px solid black;
+  }
+
+  &:before, &:after {
+    position: absolute;
+    top: 15%; left: calc(50% - .0625em);
+    width: .125em; height: 70%;
+
+    transform: rotate(45deg);
+    background: currentcolor;
+    content: ''
+  }
+
+  &:after { transform: rotate(-45deg); }
+}
+.checkbox {
+  width: 13px;
+  height: 13px;
+  color: red;
+  border: 1px solid grey;
+  margin: 6px 2px;
+  }
+
+.new-task{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+

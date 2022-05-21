@@ -1,0 +1,43 @@
+.card{
+  color: blue;
+
+}
+.card__button label{
+  background-color: #d3d3d3;
+  color: #15158f;
+  width: 100px;
+  margin: 5px;
+  display: flex;
+  justify-content: left;
+  border: 0.5px solid grey;
+  cursor: pointer;
+  &:hover {
+    background-color: #989797;
+  }
+ }
+
+
+input[type="checkbox"]{
+  -webkit-appearance: initial;
+  appearance: initial;
+  width: 14px;
+  height: 14px;
+  background: transparent;
+  border: 1px solid grey;
+  border-radius: 2px;
+  position: relative;
+  cursor: pointer;
+  top:2px;
+}
+input[type="checkbox"]:checked {
+}
+input[type="checkbox"]:checked:after {
+  content: "\274C";
+  position: absolute;
+  top: -5.55px;
+  left: -4.45px;
+  transform: scale(0.6);
+}
+.check-input:checked + .label-for-check{
+  background-color: lightgrey;
+}
